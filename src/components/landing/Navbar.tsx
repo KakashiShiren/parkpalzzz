@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import ParkPalsLogo from "@/components/ParkPalsLogo";
 
 const navLinks = ["Home", "Features", "How It Works", "Safety", "Pricing", "Community"];
 
@@ -26,9 +27,8 @@ const Navbar = () => {
       >
         <div className="container mx-auto flex items-center justify-between px-6 py-4">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
-            <span className="text-2xl">🐾</span>
-            <span className="text-xl font-extrabold gradient-text">ParkPals</span>
+          <a href="#" className="flex items-center">
+            <ParkPalsLogo size="md" />
           </a>
 
           {/* Desktop Links */}
