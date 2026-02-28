@@ -1,3 +1,5 @@
+import ParkPalsLogo from "@/components/ParkPalsLogo";
+
 const footerLinks = {
   Product: ["Features", "Pricing", "Safety", "AI Assistant", "Download"],
   Company: ["About", "Blog", "Careers", "Press"],
@@ -11,9 +13,8 @@ const Footer = () => (
       <div className="grid md:grid-cols-5 gap-12">
         {/* Brand */}
         <div className="md:col-span-2">
-          <div className="flex items-center gap-2 mb-4">
-            <span className="text-2xl">🐾</span>
-            <span className="text-xl font-extrabold gradient-text">ParkPals</span>
+          <div className="mb-4">
+            <ParkPalsLogo size="md" />
           </div>
           <p className="text-sm text-muted-foreground leading-relaxed max-w-sm">
             Where tails and tales meet. The real-time community app for dog parents and kid parents.
